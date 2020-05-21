@@ -12,6 +12,7 @@ class Artist
     @@all
   end
 
+<<<<<<< HEAD
   def add_song(song)
     # keeps track of an artist's songs
     song.artist = self
@@ -36,5 +37,21 @@ class Artist
   def print_songs
     # lists all of the artist's songs
     songs.each {|song| puts song.name}
+=======
+  def add_song
+
+  end
+
+  def songs
+
+  end
+
+  def self.find_or_create_by_name
+
+  end
+
+  def print_songs
+
+>>>>>>> 77df0e96e9388c6952eda124330c8dcfccf3553a
   end
 end

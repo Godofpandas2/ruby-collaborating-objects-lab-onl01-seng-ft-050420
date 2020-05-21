@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 require "pry"
 
+=======
+>>>>>>> 77df0e96e9388c6952eda124330c8dcfccf3553a
 class Song
   attr_accessor :name, :artist
 
@@ -14,6 +17,7 @@ class Song
     @@all
   end
 
+<<<<<<< HEAD
   def self.new_by_filename(file)
     #binding.pry
     file_array = file.split(" - ")
@@ -29,6 +33,14 @@ class Song
     #accepts an artist's name, finds or creates an Artist instance and assigns it to the Song's artist attribute
     self.artist = Artist.find_or_create_by_name(name)
     artist.add_song(self)
+=======
+  def self.new_by_filename
+
+  end
+
+  def artist_name
+
+>>>>>>> 77df0e96e9388c6952eda124330c8dcfccf3553a
   end
 
 end
